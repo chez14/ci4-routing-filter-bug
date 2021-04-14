@@ -1,6 +1,6 @@
 <?php
 
-namespace Config;
+namespace Extendables\Config;
 
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Format\FormatterInterface;

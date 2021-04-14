@@ -1,6 +1,6 @@
 <?php
 
-namespace Config;
+namespace Extendables\Config;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();

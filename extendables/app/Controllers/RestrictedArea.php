@@ -2,7 +2,7 @@
 
 namespace Extendables\App\Controllers;
 
-class Home extends BaseController
+class RestrictedArea extends BaseController
 {
 	public function index()
 	{
