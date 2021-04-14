@@ -1,3 +1,7 @@
+<?php
+
+namespace Extendables\App\Views;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
