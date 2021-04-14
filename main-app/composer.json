@@ -6,7 +6,8 @@
 	"license": "MIT",
 	"require": {
 		"php": "^7.3||^8.0",
-		"codeigniter4/framework": "^4"
+		"codeigniter4/framework": "^4",
+		"chez14/extendables": "dev-master"
 	},
 	"require-dev": {
 		"fakerphp/faker": "^1.9",
@@ -37,5 +38,11 @@
 		"forum": "http://forum.codeigniter.com/",
 		"source": "https://github.com/codeigniter4/CodeIgniter4",
 		"slack": "https://codeigniterchat.slack.com"
-	}
+	},
+	"repositories": [
+		{
+			"type": "path",
+			"url": "../extendables/"
+		}
+	]
 }
