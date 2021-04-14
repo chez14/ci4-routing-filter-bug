@@ -1,6 +1,6 @@
 <?php
 
-namespace Extendables\App\Controllers;
+namespace Extendables\Controllers;
 
 use CodeIgniter\Config\Services;
 use CodeIgniter\Filters\FilterInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Extendables\App\Views;
+namespace Extendables\Views;
 ?>
 <!DOCTYPE html>
 <html lang="en">
