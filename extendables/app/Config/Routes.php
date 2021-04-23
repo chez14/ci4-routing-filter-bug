@@ -12,8 +12,9 @@ $routes->group('admin', ['namespace' => 'Extendables\Controllers'], function ($r
 	$routes->get("auth/login", "RestrictedArea::get_login", ['as' => 'pnd_login']);
 	$routes->post("auth/logout", "RestrictedArea::post_logout", ['filter' => 'pnd_auth', 'as' => 'pnd_login']);
 
+	$routes->addRedirect('', '/admin/panel');
 	// Admin panels
-	$routes->group("", ['filter' => 'pnd_auth'], function ($routes) {
+	$routes->group("panel", ['filter' => 'pnd_auth'], function ($routes) {
 		$routes->get("", "Admin::index");
 	});
 });
