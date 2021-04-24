@@ -42,6 +42,13 @@ class Autoload extends AutoloadConfig
 	public $psr4 = [
 		APP_NAMESPACE => APPPATH, // For custom app namespace
 		'Config'      => APPPATH . 'Config',
+
+		/**
+		 * Manually configure SPL Autoload for `Extendables` class.
+		 * 
+		 * @link https://github.com/codeigniter4/CodeIgniter4/issues/4572#issuecomment-822554416
+		 */
+		'Extendables'      => '../../../extendables/app',
 	];
 
 	/**
