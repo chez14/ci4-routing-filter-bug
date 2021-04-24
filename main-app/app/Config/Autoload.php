@@ -48,7 +48,7 @@ class Autoload extends AutoloadConfig
 		 * 
 		 * @link https://github.com/codeigniter4/CodeIgniter4/issues/4572#issuecomment-822554416
 		 */
-		'Extendables'      => '../../../extendables/app',
+		// 'Extendables'      => '../../../extendables/app',
 	];
 
 	/**
