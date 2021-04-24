@@ -14,12 +14,12 @@ Routing from `extendables` have filters `pnd_auth` where it's registered on
 [`Filters.php` on `extendables`](./extendables/app/Config/Filters.php), and used
 on [`Routes.php` on `extendables`](./extendables/app/Config/Routes.php).
 
-The `extendables` project are accessible on `/admin` routing group as mentioned
+The `extendables` project are accessible on `/admin/panel` routing group as mentioned
 on [`extendables`' Routes.php](extendables/app/Config/Routes.php) file. So by
 that we're expecting that routes that have filters will work as expected because
 we have register them on the `Filters.php` file on the `extendables`. That being
 said, the CI4 returns filter not found exceptions.
 
 By exploration, i figure out that the `Filters.php` file from `extendables`
-didn't get loaded when its needed, while accessing `/admin` route.
+didn't get loaded when its needed, while accessing `/admin/panel` route.
 
