@@ -10,11 +10,11 @@ $routes = Services::routes();
 $routes->group('admin', ['namespace' => 'Extendables\Controllers'], function ($routes) {
 	// Authentication service
 	$routes->get("auth/login", "RestrictedArea::get_login", ['as' => 'pnd_login']);
-	$routes->post("auth/logout", "RestrictedArea::post_logout", ['filter' => 'pnd_auth', 'as' => 'pnd_login']);
+	$routes->post("auth/logout", "RestrictedArea::post_logout", ['filter' => 'pnd_auth', 'as' => 'pnd_logout']);
 
 	$routes->addRedirect('', '/admin/panel');
 	// Admin panels
-	$routes->group("panel", ['filter' => 'pnd_auth'], function ($routes) {
-		$routes->get("", "Admin::index");
+	$routes->group("panel", ['namespace' => 'Extendables\Controllers', 'filter' => 'pnd_auth'], function ($routes) {
+		$routes->get("", "RestrictedArea::index");
 	});
 });
