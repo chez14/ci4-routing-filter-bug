@@ -3,7 +3,7 @@
 namespace Extendables\Config;
 
 use Config\Filters;
-use Extendables\Controllers\Auth;
+use Extendables\Filters\Auth;
 
 /**
  * @var Filters $filters

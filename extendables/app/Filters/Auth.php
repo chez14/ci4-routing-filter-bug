@@ -1,6 +1,6 @@
 <?php
 
-namespace Extendables\Controllers;
+namespace Extendables\Filters;
 
 use CodeIgniter\Config\Services;
 use CodeIgniter\Filters\FilterInterface;
@@ -28,7 +28,7 @@ class Auth implements FilterInterface
 	{
 		$session = Services::session();
 		if (!$session->get("logged-in")) {
-			redirect(route_to("pnd_login"));
+			redirect()->to(route_to("pnd_login"));
 		}
 	}
 
